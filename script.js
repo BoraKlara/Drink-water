@@ -5,5 +5,9 @@ const percentage = document.getElementById("percentage");
 const remained = document.getElementById("remained");
 
 smallCups.forEach((cup, idx) => {
+  cup.addEventListener('click', () => highlightCups)
+}
+
+function highlightCups(idx){
   console.log(idx);
-});
+}
