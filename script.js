@@ -13,7 +13,7 @@ function highlightCups(i){
     if(i2 <= i){
       cup.classList.add('full')
     }else{
-      cup.classList.add('full')
+      cup.classList.remove('full')
     }
   }
 }
