@@ -34,5 +34,9 @@ function updateBigCup() {
 
   const totalCups = smallCups.length;
 
-  console.log(totalCups);
+  if (fullCups === 0) {
+    percentage.style.visibility = "hidden";
+  } else {
+    percentage.style.height = `${(fullCups / totalCups) * 250}px`;
+  }
 }
