@@ -42,4 +42,9 @@ function updateBigCup() {
     percentage.style.height = `${(fullCups / totalCups) * 250}px`;
     percentage.innerText = `${(fullCups / totalCups) * 100}%`;
   }
+
+  if (fullCups === totalCups) {
+    remained.style.visibility = "hidden";
+    remained.style.height = 0;
+  }
 }
